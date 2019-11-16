@@ -10,7 +10,7 @@
     width: 3rem;
     height: 0.4rem;
     margin: 0 0 0.6rem 0;
-    background-color: #fff;
+    background-color: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -21,8 +21,7 @@
 
     .btn-line {
       //line one - rotate
-      &:nth-child(1) {/* 
-        transform: rotate(45deg) translate(0.2604rem, 0.2604rem); */
+      &:nth-child(1) {
         transform: rotate(45deg) translate(1rem, 1rem);
       }
       //line two - hide
@@ -88,6 +87,7 @@
       width: 250px;
       height: 250px;
       background: url(../assets/images/portrait.jpg);
+      background-size: cover;
       background-position: center;
       border-radius: 50%;
       border: 3px solid $secondary-color;
@@ -115,7 +115,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
