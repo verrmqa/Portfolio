@@ -32,6 +32,19 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin svg {
+  svg{
+    fill: #fff;
+    width: 5rem;
+    height: 5rem;
+  }
+  &:hover svg{
+    fill: $secondary-color;
+    @include easeOut;
+  }
+}
+
+
 //set text color
 
 @function set-text-color($color) {
